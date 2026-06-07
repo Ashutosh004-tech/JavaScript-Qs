@@ -41,7 +41,21 @@ if( v2 != 0 || v1>v2){
     console.log(v2); //0
 }
 
-
 // 4.Logical Not
 console.log((v1>v2)); //true
 console.log(!(v1>v2)); //false
+
+//Unary Operator
+
+// 1.Assignment Operator 
+let xyz = 23
+
+// 2.Increment Operator
+let x = 4
+// Post Increment 
+let p = x++;
+console.log(p); // 4
+
+//Pre Increment
+let q = ++x;
+console.log(q); // 6
