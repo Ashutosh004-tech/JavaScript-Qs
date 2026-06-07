@@ -15,7 +15,14 @@ let val;
 let data = null
 
 // 6.Symbol
+let sym = Symbol("abc");
+console.log(sym) //Symbol(abc)
+console.log(typeof sym) // symbol
+
+
 // 7.BigInt
+let bigNum = 12323n
+console.log(typeof bigNum) // bigint
 
 console.log(typeof(a)) //  Number
 
