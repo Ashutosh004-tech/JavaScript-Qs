@@ -2,14 +2,12 @@ let num = 23
 
 let str = "Hello"
 
-let isOkay = false
+let isOkay =true
 
 let str2 = String(isOkay); 
-
 console.log(str2) // false 
 
 let val = Number(str)
-
 console.log(val) // NaN
 /*
 NaN : The NaN global property is a value representing Not-A-Number.
@@ -25,5 +23,23 @@ let ch = "Hii"
 console.log(a + Number(ch)) // NaN
 
 let okay = Number(isOkay)
+console.log(okay) // 1
 
-console.log(okay) // 0
+let x = undefined
+console.log(Number(x)); // NaN
+
+let y = null 
+console.log(Number(y)) //0
+
+let isDone = Boolean(x);
+console.log(isDone); // false 
+
+let isConvert = Boolean(y);
+console.log(isDone); // false 
+
+let st = "Hello"
+console.log(Boolean(st)) // true
+
+let scr = 55
+console.log(Boolean(scr)) // true
+
