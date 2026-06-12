@@ -14,7 +14,13 @@ let age = dt.toString();
 console.log(age);
 console.log(typeof age);
 
+let value = 120;
+console.log(value.toExponential());
+console.log(value.valueOf);
+
 // ********************************* MATH ********************************* \\
+
+// Square root
 
 let nm = 25;
 let sqrOfNum = Math.sqrt(nm);
@@ -25,11 +31,29 @@ console.log(Math.floor(someNum));
 
 let randomNum = Math.random();
 console.log(randomNum);
-console.log(Math.floor((Math.random()*10)+1))
+console.log(Math.floor(Math.random() * 10 + 1));
 
-let val = 12.54
+let val = 12.54;
 console.log(Math.ceil(val));
 console.log(Math.round(val));
 
-let Num = 200.3333
+let Num = 200.3333;
 console.log(Math.abs(Num));
+
+// Power function
+let numB = 5;
+console.log(Math.pow(5, 2)); // 25
+
+// Maximum
+console.log(Math.max(23, 53, 52, 1, 53, 134));
+
+// Minimum
+console.log(Math.min(12, 4, 23, 1, 45, 21, 55, 0.5));
+
+// Round
+console.log(Math.round(223.53));
+
+// Sign
+console.log(Math.sign(-233)); // -1;
+console.log(Math.sign(233)); // 1;
+console.log(Math.sign(0)); // 0;
