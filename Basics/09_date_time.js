@@ -20,6 +20,13 @@ console.log(date.toLocaleDateString())
 const dateOfN = new Date("12 4 2004")
 console.log(dateOfN)
 
+//
+
+
 
  // ********************** TIME **********************
- 
+ const time =  Date.now();
+ console.log(time) // 1781405835482 || Miliseconed
+
+ console.log(new Date(Date.now())) //2026-06-14T02:57:15.485Z
+ console.log(new Date) //2026-06-14T02:57:15.485Z
