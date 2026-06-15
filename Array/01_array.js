@@ -11,29 +11,34 @@
                     (point to the same underlying values) as those of the source object from which the copy was made.
 */
 
-
 let arr = [1, 4, 5, 6, 8];
-console.log(arr)
+console.log(arr);
 
 let strArr = ["Hii", "Hello", "Bye"];
-console.log(strArr)
+console.log(strArr);
 
-// ----------------------- Prototype ----------------------- 
+// ----------------------- Prototype -----------------------
 
 // at(idx)
-console.log(arr.at(3)) // 6 
+console.log(arr.at(3)); // 6
 
 // Concatenate two array
-let ar1 = [2,4,5,2,5]
-let ar2 = [4,6,7,2,7]
+let ar1 = [2, 4, 5, 2, 5];
+let ar2 = [4, 6, 7, 2, 7];
 
 let concatAr = ar1.concat(ar2);
 console.log(concatAr);
 
-// Push and Pop in an array 
+// Push and Pop in an array
 let val = [34, 64, 63];
-val.push(3)
-console.log(val)
+val.push(3);
+console.log(val);
 
-val.pop()
-console.log(val)
+val.pop();
+console.log(val);
+
+let numArray = [8, 9, 6, 4, 87, 54, 67, 34, 21];
+console.log(Array.isArray(numArray)) // true
+let newNumArray = numArray.sort()
+console.log("A : ", newNumArray) // This happens because numbers are treated as strings:
+
