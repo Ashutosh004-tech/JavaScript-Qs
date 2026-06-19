@@ -1,10 +1,10 @@
-let arr = [2, 11, 4, 6, 5, 6, 3, 4, 5, 6, 8, 8,18];
+let arr = [2, 11, 4, 6, 5, 6];
 
 // to reverse an array
-console.log(arr.toReversed())
+console.log(arr.toReversed());
 
 // to string
-console.log(arr.toString())
+console.log(arr.toString());
 
 // slice vs Splice
 
@@ -34,3 +34,8 @@ slice()	                                        splice()
 the selected elements.	                        => Returns an array of the removed elements.
 =>Syntax: array.slice(start, end)	            => Syntax: array.splice(start, deleteCount, items...)
 */
+
+const myArr = [3, 5, 5, 3, 37, 8, 9];
+
+console.log(myArr.slice(0,2));//
+console.log(myArr.splice(1,2)); //
