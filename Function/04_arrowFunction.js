@@ -38,3 +38,7 @@ const isEven=num=>num%2===0
 console.log(isEven(8));
 console.log(isEven(5));
 
+//fid the largest of two numbers
+const max=(a,b)=>(a>b?a:b)
+console.log(max(15,18));
+
