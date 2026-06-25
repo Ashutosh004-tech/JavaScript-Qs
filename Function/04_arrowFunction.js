@@ -28,3 +28,7 @@ console.log(add());
 const val = a => a + 10;
 
 console.log(val(3));
+
+//Square of a number 
+const square=num=>num*num;
+console.log(square(6));
