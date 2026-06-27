@@ -218,4 +218,4 @@ By the end of this series, you will be able to:
 ## ⭐ Support
 If this repository helps you, consider giving it a **Star ⭐**.
 
-Happy Coding! 🚀
+**Happy Coding! 🚀**
