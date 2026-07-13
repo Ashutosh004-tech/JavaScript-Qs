@@ -1,6 +1,8 @@
 # JavaScript Mastery 🚀
 A complete JavaScript learning series from **Basic to Advanced** concepts with examples, projects, and interview preparation.
 
+
+
 ## 📚 Course Roadmap
 
 ### 01. Introduction to JavaScript
