@@ -9,4 +9,4 @@ console.log(isEven(5));
 
 //fid the largest of two numbers
 const max = (a, b) => (a > b ? a : b);
-console.log(max(15, 18));
+console.log(max(5, 18));
