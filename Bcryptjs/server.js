@@ -2,6 +2,10 @@ import mongoose from "mongoose";
 import express from "express";
 import User from "./model.js";
 import bcrypt from "bcrypt";
+import dotenv from "dotenv";
+import getToken from "./utils/jwtToken.js";
+
+dotenv.config();
 
 const app = express();
 const port = 3000;
@@ -21,12 +25,13 @@ app.post("/user/new", async (req, res) => {
 
     const hashPassword = await bcrypt.hash(password, 10);
     const Res = await User.create({ name, email, password: hashPassword });
-    res.status(200).json({ Res });
+
+    const token = await getToken(Res._id.toString());
+    res.status(200).json({ Res, token });
 
   } catch (er) {
     console.log(er);
   }
-  
 });
 
 app.listen(port, () => {
