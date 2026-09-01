@@ -1,13 +1,15 @@
 import jwt from "jsonwebtoken";
 
-const getToken = async (userId) => {
-  return await jwt.sign(
-    { userId },
-    process.env.JWT_SECRET, 
-    {
-        expiresIn: process.env.JWT_EXPIRES_IN || "7d",
-    }
-);
+const getAcccessToken = async (userId) => {
+  return await jwt.sign({ userId }, process.env.JWT_SECRET, {
+    expiresIn: process.env.JWT_EXPIRES_IN || "15m",
+  });
 };
 
-export default getToken;
+const getRefreshToken = async (userId) => {
+  return await jwt.sign({ userId }, process.env.JWT_SECRET, {
+    expiresIn: process.env.JWT_EXPIRES_IN || "7d",
+  });
+};
+
+export { getAcccessToken, getRefreshToken };
